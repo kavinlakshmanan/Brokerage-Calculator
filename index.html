@@ -219,7 +219,7 @@
             growCharge = growCharge.toFixed(4);
 
             document.getElementById('zerodhaCharge').textContent = `Total ${type === 'buy' ? 'Buying Charge' : 'Selling Charge'} (Zerodha): ₹${zerodhaCharge}`;
-            document.getElementById('growCharge').textContent = `Total Charge on ${type === 'buy' ? 'Buying Charge' : 'Selling Charge'} (Grow): ₹${growCharge}`;
+            document.getElementById('growCharge').textContent = `Total ${type === 'buy' ? 'Buying Charge' : 'Selling Charge'} (Grow): ₹${growCharge}`;
 
             document.getElementById('results').style.display = 'block';
         });
