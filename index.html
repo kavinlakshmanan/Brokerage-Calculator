@@ -218,8 +218,8 @@
             zerodhaCharge = zerodhaCharge.toFixed(4);
             growCharge = growCharge.toFixed(4);
 
-            document.getElementById('zerodhaCharge').textContent = `Total ${type === 'buy' ? 'Buying Charge' : 'Selling Charge'} (Zerodha): ₹${zerodhaCharge}`;
-            document.getElementById('growCharge').textContent = `Total ${type === 'buy' ? 'Buying Charge' : 'Selling Charge'} (Grow): ₹${growCharge}`;
+            document.getElementById('zerodhaCharge').textContent = `Total ${type === 'buy' ? 'Buying' : 'Selling'} Charge (Zerodha): ₹${zerodhaCharge}`;
+            document.getElementById('growCharge').textContent = `Total ${type === 'buy' ? 'Buying' : 'Selling'} Charge (Grow): ₹${growCharge}`;
 
             document.getElementById('results').style.display = 'block';
         });
