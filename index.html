@@ -215,8 +215,8 @@
                 growCharge = (0.0000327 * amount) + (0.000001 * amount) + (0.001 * amount) + 0.18 * (0.0000327 * amount) + 21.535;
             }
 
-            zerodhaCharge = zerodhaCharge.toFixed(6);
-            growCharge = growCharge.toFixed(6);
+            zerodhaCharge = zerodhaCharge.toFixed(4);
+            growCharge = growCharge.toFixed(4);
 
             document.getElementById('zerodhaCharge').textContent = `Total Charge on ${type === 'buy' ? 'Buying' : 'Selling'} (Zerodha): ₹${zerodhaCharge}`;
             document.getElementById('growCharge').textContent = `Total Charge on ${type === 'buy' ? 'Buying' : 'Selling'} (Grow): ₹${growCharge}`;
